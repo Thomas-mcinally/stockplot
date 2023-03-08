@@ -5,7 +5,7 @@ from mplfinance import figure, plot, show
 from stockplot.shared import calculate_price_movement
 
 
-def visualize_results(
+def create_in_memory_candlestick_plot(
     ticker,
     data_1day,
     data_90day,
@@ -78,7 +78,7 @@ def main():
         ticker, period="1d", interval="30m", auto_adjust=True, progress=False
     )
 
-    visualize_results(
+    create_in_memory_candlestick_plot(
         ticker,
         data_1day,
         data_90day,
