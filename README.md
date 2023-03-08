@@ -10,3 +10,14 @@ CLI tool to plot historic price movement of a stock ticker
 **Output:** Pop-out matplotlib window with historic price movement and trading volumes for that ticker
 
 ![](images/output_stockplot.png)
+
+## Installation
+Using [pipx](https://pypa.github.io/pipx/)
+```
+pipx install stockplot
+```
+
+Alternatively, using pip (or pip3):
+```
+pip install stockplot
+```
