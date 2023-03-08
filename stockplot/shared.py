@@ -11,9 +11,7 @@ def calculate_percentage_price_change_1_day(data_1day, current_price):
     return calculate_percentage_price_change(current_price, price_at_start_of_day)
 
 
-def calculate_percentage_price_change_over_n_days(
-    n, current_price, data_90day
-):
+def calculate_percentage_price_change_over_n_days(n, current_price, data_90day):
     datetime_n_days_ago = datetime.datetime.now() - datetime.timedelta(days=n)
     processing = True
     while processing:
