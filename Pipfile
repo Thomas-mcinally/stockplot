@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+yfinance = "*"
+mplfinance = "*"
+
+[dev-packages]
+pytest = "*"
+freezegun = "*"
+responses = "*"
+pre-commit = "*"
+black = "*"
+autoflake = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+setup = "bash -c \"pre-commit install\""
+format = "bash -c \"autoflake --remove-all-unused-imports -i -r . && black .\""
+format-check = "bash -c \"autoflake --remove-all-unused-imports -c -r . && black --check --diff .\""

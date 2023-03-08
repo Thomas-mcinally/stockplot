@@ -2,13 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'stockplot',
-    packages = find_packages(),
+    packages = find_packages(exclude=["tests"]),
     email='thomasmcinally@hotmail.com',
     author='Thomas Mcinally',
     long_description_content_type="text/markdown",
     install_requires=[
-        'matplotlib',
-        'pandas',
         'yfinance',
         'mplfinance'
     ],  

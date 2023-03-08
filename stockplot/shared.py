@@ -1,7 +1,5 @@
 import datetime
-import pandas as pd
 import yfinance
-from typing import Tuple
 
 
 def calculate_percentage_price_change(current_price, start_price):
@@ -14,8 +12,8 @@ def calculate_percentage_price_change_1_day(data_1day, current_price):
 
 
 def calculate_percentage_price_change_over_n_days(
-    n: int, current_price: float, data_90day: pd.DataFrame
-) -> float:
+    n, current_price, data_90day
+):
     datetime_n_days_ago = datetime.datetime.now() - datetime.timedelta(days=n)
     processing = True
     while processing:
@@ -32,7 +30,7 @@ def calculate_percentage_price_change_over_n_days(
     return change_nday
 
 
-def calculate_price_movement(ticker: str) -> Tuple[float, float, float]:
+def calculate_price_movement(ticker):
     """
     Parameters:
         ticker (str): Ticker of asset to investigate
@@ -43,10 +41,10 @@ def calculate_price_movement(ticker: str) -> Tuple[float, float, float]:
         percentage_change_7day (float): Price change since last trading day >=7days ago
         percentage_change_30day (float): Price change since last trading day >=30days ago
     """
-    data_90day: pd.DataFrame = yfinance.download(
+    data_90day = yfinance.download(
         ticker, period="90d", interval="1d", auto_adjust=True, progress=False
     )
-    data_1day: pd.DataFrame = yfinance.download(
+    data_1day = yfinance.download(
         ticker, period="1d", interval="1m", auto_adjust=True, progress=False
     )
 

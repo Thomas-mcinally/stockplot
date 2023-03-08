@@ -1,0 +1,39 @@
+---
+name: test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: Install pipenv
+        run: pipx install pipenv
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: "pipenv"
+      - name: Pipenv install
+        run: pipenv install --dev
+      - run: pipenv run format-check
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: Install pipenv
+        run: pipx install pipenv
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          cache: "pipenv"
+      - name: Pipenv install
+        run: pipenv install --dev
+      - run: pipenv run pytest
