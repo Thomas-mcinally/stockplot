@@ -12,7 +12,7 @@ setup(
         'yfinance',
         'mplfinance'
     ],  
-    version = '1.0.0',
+    version = '1.0.1',
     entry_points = {
         'console_scripts': [
             'stockplot = stockplot.main:main'
