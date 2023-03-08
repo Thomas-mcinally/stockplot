@@ -7,6 +7,6 @@ setup(
     author="Thomas Mcinally",
     long_description_content_type="text/markdown",
     install_requires=["yfinance", "mplfinance"],
-    version="1.0.2",
+    version="1.0.3",
     entry_points={"console_scripts": ["stockplot = stockplot.main:main"]},
 )
