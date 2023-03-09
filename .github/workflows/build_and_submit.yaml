@@ -27,10 +27,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
       - name: Set Release Version
         run: |
           # Grab the version of the package
-          version=$(cat setup.py | grep version | cut -d "'" -f 2)
+          version=$(python setup.py --version)
           echo "Releasing for version $version"
           echo "RELEASE_VERSION=$version" >> $GITHUB_ENV
       - name: GitHub Release
