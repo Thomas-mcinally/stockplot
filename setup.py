@@ -8,6 +8,6 @@ setup(
     url="https://github.com/Thomas-mcinally/stockplot",
     long_description_content_type="text/markdown",
     install_requires=["yfinance", "mplfinance"],
-    version="1.0.6",
+    version="1.0.5",
     entry_points={"console_scripts": ["stockplot = stockplot.main:main"]},
 )
