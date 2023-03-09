@@ -1,7 +1,6 @@
 import sys
 import yfinance as yf
 from mplfinance import figure, plot, show
-
 from stockplot.shared import calculate_price_movement
 
 

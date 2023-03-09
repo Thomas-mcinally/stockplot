@@ -6,7 +6,6 @@ on:
     - main
     paths:
     - 'stockplot/**'
-    - '**/setup.py'
 
 jobs:
   submit:
