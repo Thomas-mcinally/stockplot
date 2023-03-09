@@ -44,6 +44,6 @@ setup(
         "yfinance==0.2.12",
         "zipp==3.15.0; python_version < '3.10'",
     ],
-    version="1.0.11",
+    version="1.0.12",
     entry_points={"console_scripts": ["stockplot = stockplot.main:main"]},
 )
