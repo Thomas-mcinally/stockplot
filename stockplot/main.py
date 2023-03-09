@@ -1,7 +1,7 @@
 import sys
 import yfinance as yf
 from mplfinance import figure, plot, show
-from stockplot.shared import calculate_price_movement
+from stockplot.calculate_price_movement import calculate_price_movement
 
 
 def create_in_memory_candlestick_plot(

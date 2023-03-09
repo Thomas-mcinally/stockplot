@@ -1,5 +1,5 @@
 import freezegun
-from stockplot.shared import calculate_price_movement
+from stockplot.calculate_price_movement import calculate_price_movement
 from tests.conftest import (
     example_yahoo_api_response_1day_tsla_2023_02_26,
     example_yahoo_api_response_90day_tsla_2023_02_26,
