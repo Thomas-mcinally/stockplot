@@ -5,7 +5,9 @@ on:
     branches:
     - main
     paths:
-    - 'stockplot/**'
+    - '**.py'
+    paths-ignore:
+    - 'tests/**'
 
 jobs:
   submit:
