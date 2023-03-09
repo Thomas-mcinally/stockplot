@@ -5,6 +5,7 @@ setup(
     packages=find_packages(exclude=["tests"]),
     email="thomasmcinally@hotmail.com",
     author="Thomas Mcinally",
+    url="https://github.com/Thomas-mcinally/stockplot",
     long_description_content_type="text/markdown",
     install_requires=["yfinance", "mplfinance"],
     version="1.0.4",
