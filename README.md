@@ -1,7 +1,7 @@
 # stockplot
 
 CLI tool to plot historic price movement of a stock ticker
-- Work for all tickers listed on Yahoo Finance, including cryptocurrency trading pairs (e.g. TSLA, AAPL, BTC-USD, ETH-USD)
+- Works for all tickers listed on Yahoo Finance, including cryptocurrency trading pairs (e.g. TSLA, AAPL, BTC-USD, ETH-USD)
 
 **Input:** One-line command in terminal (stockplot TICKER)
 
