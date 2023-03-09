@@ -5,13 +5,7 @@ from stockplot.shared import calculate_price_movement
 
 
 def create_in_memory_candlestick_plot(
-    ticker,
-    data_1day,
-    data_90day,
-    current_price,
-    change_1day,
-    change_7day,
-    change_30day,
+    ticker, data_1day, data_90day, current_price, change_1day, change_7day, change_30day
 ):
     """
     Parameters:
