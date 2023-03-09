@@ -10,7 +10,7 @@ on:
 
 permissions:
   contents: write
-    
+
 jobs:
   build_and_submit:
     runs-on: ubuntu-latest
@@ -35,11 +35,11 @@ jobs:
           python-version: '3.8'
       - name: Set Release Version
         run: |
-          # Grab the version of the package
+          # Grab the version of the app
           version=$(python setup.py --version)
           echo "Releasing for version $version"
           echo "RELEASE_VERSION=$version" >> $GITHUB_ENV
-      - name: GitHub Release
+      - name: Set github repo tag
         uses: softprops/action-gh-release@v1
         with:
           name: Release v${{ env.RELEASE_VERSION }}
