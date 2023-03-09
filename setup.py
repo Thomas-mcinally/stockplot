@@ -8,6 +8,7 @@ setup(
     author="Thomas McInally",
     url="https://github.com/Thomas-mcinally/stockplot",
     long_description_content_type="text/markdown",
+    python_requires=">=3.8",
     install_requires=[
         "appdirs==1.4.4",
         "beautifulsoup4==4.11.2; python_full_version >= '3.6.0'",
