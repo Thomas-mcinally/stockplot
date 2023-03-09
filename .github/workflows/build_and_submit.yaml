@@ -25,6 +25,8 @@ jobs:
     needs: build_and_submit
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Set Release Version
         run: |
           # Grab the version of the package
