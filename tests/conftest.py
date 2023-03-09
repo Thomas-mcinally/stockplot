@@ -26,6 +26,7 @@ def mock_GET_yahoo_v8_finance_chart_api_90day_range(mocked_responses):
             status=200,
             json=json_response,
         )
+        a = 3
 
     return _mock_GET_yahoo_v8_finance_chart_api_90day_range
 
