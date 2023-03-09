@@ -4,7 +4,7 @@ setup(
     name="stockplot",
     packages=find_packages(exclude=["tests"]),
     email="thomasmcinally@hotmail.com",
-    author="Thomas Mcinally",
+    author="Thomas McInally",
     url="https://github.com/Thomas-mcinally/stockplot",
     long_description_content_type="text/markdown",
     install_requires=["yfinance", "mplfinance"],
