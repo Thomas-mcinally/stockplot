@@ -1,10 +1,9 @@
 name: Scheduled smoke test
 
 on:
-  pull_request:
-  # schedule:
-  #   # Runs at 00:00 on 11th day of every month
-  #   - cron: '0 0 11 * *'
+  schedule:
+    # Runs at 00:00 on 11th day of every month
+    - cron: '0 0 11 * *'
 
 
 
