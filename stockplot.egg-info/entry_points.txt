@@ -1,0 +1,2 @@
+[console_scripts]
+stockplot = stockplot.main:main

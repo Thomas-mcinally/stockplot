@@ -1,0 +1,13 @@
+README.md
+setup.py
+stockplot/__init__.py
+stockplot/calculate_price_movement.py
+stockplot/create_candlestick_plot.py
+stockplot/main.py
+stockplot.egg-info/PKG-INFO
+stockplot.egg-info/SOURCES.txt
+stockplot.egg-info/dependency_links.txt
+stockplot.egg-info/entry_points.txt
+stockplot.egg-info/requires.txt
+stockplot.egg-info/top_level.txt
+tests/test_calculate_price_movement.py

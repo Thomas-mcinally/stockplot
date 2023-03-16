@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stockplot
+Version: 1.1.0
+Home-page: https://github.com/Thomas-mcinally/stockplot
+Author: Thomas McInally
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
