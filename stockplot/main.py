@@ -5,11 +5,19 @@ from stockplot.calculate_price_movement import calculate_price_movement
 
 
 def create_in_memory_candlestick_plot(
-    ticker, data_1day, data_90day, current_price, change_1day, change_7day, change_30day
+    ticker,
+    currency,
+    data_1day,
+    data_90day,
+    current_price,
+    change_1day,
+    change_7day,
+    change_30day,
 ):
     """
     Parameters:
         ticker (str): Stock ticker
+        currency (str): currency for all prices
         data_1day (pandas.DataFrame): Price for ticker every 30m for last 24h
         data_90day (pd.DataFrame): Price for ticker every 1h for last 90days
         current_price (float): Current price for ticker
@@ -47,7 +55,7 @@ def create_in_memory_candlestick_plot(
         axtitle=f"{ticker} last trading day ({last_trading_day})",
     )
     fig.suptitle(
-        f"Current market price: {current_price:.2f} , Daily change {change_1day:.2f}% , 7-day change: {change_7day:.2f}%, 30-day change: {change_30day:.2f}%"
+        f"Current market price: {current_price:.2f} {currency} , Daily change {change_1day:.2f}% , 7-day change: {change_7day:.2f}%, 30-day change: {change_30day:.2f}%"
     )
 
     return fig
@@ -74,6 +82,7 @@ def main():
 
     create_in_memory_candlestick_plot(
         ticker,
+        currency,
         data_1day,
         data_90day,
         current_price,
