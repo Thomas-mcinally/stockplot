@@ -59,8 +59,7 @@ def create_in_memory_candlestick_plot(
     return
 
 
-def main():
-    ticker = sys.argv[1]
+def main(ticker: str = sys.argv[1]) -> None:
     ticker = ticker.upper()
 
     (
