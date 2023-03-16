@@ -59,6 +59,7 @@ def main():
 
     (
         current_price,
+        currency,
         percentage_change_1day,
         percentage_change_7day,
         percentage_change_30day,
