@@ -11,7 +11,7 @@ def create_in_memory_candlestick_plot(
     Parameters:
         ticker (str): Stock ticker
         data_1day (pandas.DataFrame): Price for ticker every 30m for last 24h
-        data_90day (pd.DataFrame): Price for ticker evert 1h for last 90days
+        data_90day (pd.DataFrame): Price for ticker every 1h for last 90days
         current_price (float): Current price for ticker
         change_1day (float): Percentage price change over last 24hr
         change_7day (float): Percentage price change over last 7days
