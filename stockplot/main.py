@@ -16,12 +16,8 @@ def main(ticker: str = sys.argv[1]) -> None:
         percentage_change_30day,
     ) = calculate_price_movement(ticker)
 
-    data_90day = yf.download(
-        ticker, period="90d", interval="1d", auto_adjust=True, progress=False
-    )
-    data_1day = yf.download(
-        ticker, period="1d", interval="30m", auto_adjust=True, progress=False
-    )
+    data_90day = yf.download(ticker, period="90d", interval="1d", progress=False)
+    data_1day = yf.download(ticker, period="1d", interval="30m", progress=False)
 
     create_in_memory_candlestick_plot(
         ticker,
