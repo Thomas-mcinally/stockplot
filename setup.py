@@ -40,6 +40,6 @@ setup(
         "webencodings==0.5.1",
         "yfinance==0.2.36",
     ],
-    version="2.0.3",
+    version="2.0.4",
     entry_points={"console_scripts": ["stockplot = stockplot.main:main"]},
 )
